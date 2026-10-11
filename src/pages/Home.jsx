@@ -29,11 +29,13 @@ export default function Home() {
 					</Link>
 				</div>
 
-				<div className="home-hero-visual" aria-hidden="true">
-					<div className="home-visual-circle home-circle-large"></div>
-					<div className="home-visual-circle home-circle-small"></div>
-					<div className="home-visual-shape"></div>
-				</div>
+				<div className="home-hero-visual">
+                    <img
+                        className="home-hero-image"
+                        src="https://images.unsplash.com/photo-1564078516393-cf04bd966897?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                        alt="Elegant living room with beige sofas and minimalist furnishings"
+                    />
+                </div>
 			</section>
 		</main>
 	);
