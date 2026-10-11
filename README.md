@@ -2,7 +2,7 @@
 
 https://shopping-cart-phi-six-71.vercel.app/
 
-A responsive mock shopping cart application built with React as part of The Odin Project curriculum.
+A responsive mock shopping cart application built with React.
 
 ## Features
 
