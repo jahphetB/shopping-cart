@@ -3,7 +3,7 @@ import { getProducts } from "../services/productApi";
 import ProductCard from "../components/ProductCard";
 import "../styles/Shop.css";
 
-export default function Shop() {
+export default function Shop({ onAddToCart }) {
 	const [products, setProducts] = useState([]);
 	const [loading, setLoading] = useState(true);
 	const [error, setError] = useState(null);
@@ -51,15 +51,11 @@ export default function Shop() {
 						<ProductCard
 							key={product.id}
 							product={product}
-                            onAddToCart={handleAddToCart}
+                            onAddToCart={onAddToCart}
 						/>
 					))}
 				</section>
 			)}
 		</main>
 	);
-
-    function handleAddToCart(product, quantity) {
-        console.log("Add to cart:", product.title, quantity);
-    }
 }

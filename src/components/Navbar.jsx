@@ -1,7 +1,7 @@
 import { NavLink } from "react-router";
 import "../styles/Navbar.css";
 
-export default function Navbar() {
+export default function Navbar({ cartCount }) {
 	return (
 		<header className="site-header">
 			<nav className="navbar">
@@ -14,8 +14,11 @@ export default function Navbar() {
 				</NavLink>
 
 				<NavLink className="nav-link nav-cart" to="/cart">
-					Cart
-				</NavLink>
+                    Cart
+                    {cartCount > 0 && (
+                        <span className="cart-count">({cartCount})</span>
+                    )}
+                </NavLink>
 			</nav>
 		</header>
 	);
