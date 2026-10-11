@@ -39,3 +39,45 @@
 .shop-error {
 	color: #b91c1c;
 }
+
+.product-actions {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	margin-top: auto;
+}
+
+.quantity-control {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.quantity-button {
+	padding: 0.5rem 0.75rem;
+	cursor: pointer;
+}
+
+.quantity-input {
+	width: 4rem;
+	padding: 0.5rem;
+	text-align: center;
+}
+
+.product-add-button {
+	padding: 0.75rem;
+	border: none;
+	border-radius: 0.4rem;
+	background-color: #2563eb;
+	color: white;
+	cursor: pointer;
+}
+
+.product-add-button:hover {
+	background-color: #1d4ed8;
+}
+
+.product-add-button:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}

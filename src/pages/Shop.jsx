@@ -51,10 +51,15 @@ export default function Shop() {
 						<ProductCard
 							key={product.id}
 							product={product}
+                            onAddToCart={handleAddToCart}
 						/>
 					))}
 				</section>
 			)}
 		</main>
 	);
+
+    function handleAddToCart(product, quantity) {
+        console.log("Add to cart:", product.title, quantity);
+    }
 }
