@@ -1,21 +1,58 @@
+.site-header {
+	background-color: var(--color-surface);
+	border-bottom: 1px solid var(--color-border);
+}
+
 .navbar {
 	display: flex;
-	gap: 2rem;
-	padding: 1.5rem;
-	background-color: #f0f0f0;
+	align-items: center;
+	justify-content: flex-end;
+	gap: clamp(1rem, 3vw, 2.5rem);
+	width: min(100%, var(--content-width));
+	margin: 0 auto;
+	padding: 1.5rem var(--page-padding);
 }
 
 .nav-link {
-	color: #222;
+	color: var(--color-secondary);
+	font-size: 0.95rem;
+	font-weight: 500;
 	text-decoration: none;
+	transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+	color: var(--color-primary);
 }
 
 .nav-link.active {
-	font-weight: bold;
-	text-decoration: underline;
+	color: var(--color-primary);
+	font-weight: 600;
+}
+
+.nav-cart {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
 }
 
 .cart-count {
-	margin-left: 0.35rem;
-	font-weight: bold;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 1.5rem;
+	height: 1.5rem;
+	margin-left: 0;
+	padding: 0 0.35rem;
+	border-radius: 999px;
+	background-color: var(--color-primary);
+	color: white;
+	font-size: 0.75rem;
+}
+
+@media (max-width: 480px) {
+	.navbar {
+		justify-content: center;
+		gap: 1.5rem;
+	}
 }

@@ -1,8 +1,41 @@
+:root {
+	font-family: Inter, Arial, sans-serif;
+	color: #1f2937;
+	background-color: #fafaf9;
+
+	--color-primary: #18181b;
+	--color-secondary: #71717a;
+	--color-background: #fafaf9;
+	--color-surface: #ffffff;
+	--color-border: #e4e4e7;
+
+	--content-width: 1200px;
+	--page-padding: clamp(1rem, 4vw, 3rem);
+}
+
 * {
 	box-sizing: border-box;
 }
 
 body {
 	margin: 0;
-	font-family: Arial, sans-serif;
+	min-width: 280px;
+}
+
+button,
+input {
+	font: inherit;
+}
+
+button {
+	cursor: pointer;
+}
+
+a {
+	color: inherit;
+}
+
+img {
+	display: block;
+	max-width: 100%;
 }
