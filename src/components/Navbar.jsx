@@ -14,7 +14,7 @@ export default function Navbar({ cartCount }) {
 				</NavLink>
 
 				<NavLink className="nav-link nav-cart" to="/cart">
-                    Cart
+                    Cart{" "}
                     {cartCount > 0 && (
                         <span className="cart-count">({cartCount})</span>
                     )}
